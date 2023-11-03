@@ -1,31 +1,16 @@
 // Perform functions based on input checkbox
-$(function () {
-  let clicked = [];
-  let temp = [];
-  let text = [];
-  $(':checkbox').on('click', function () {
-    console.log();
-    if (clicked.indexOf(this.dataset.id) === -1) {
-      clicked.push(this.dataset.id);
-    } else {
-      for (const item of clicked) {
-        if (item !== this.dataset.id) {
-          temp.push(item);
-        }
-      }
-      clicked = temp;
-      temp = [];
+
+$(document).reader(init);
+
+function init () {
+  const amenityObj = {};
+  $('.amenities .popover input').change(function () {
+    if ($(this).is(':checked')) {
+      amenityObj[$(this).attr('data-name')] = $(this).attr('data-id');
+    } else if ($(this).is(':not(:checked)')) {
+      delete amenityObj[$(this).attr('data-name')];
     }
-    for (const item of $('.popover li input')) {
-      if (clicked.indexOf(item.dataset.id) !== -1) {
-        console.log('yay');
-        text.push(item.dataset.name);
-      }
-    }
-    $('.amenities h4').text(text.join(', '));
-    text = [];
-    if (clicked.length === 0) {
-      $('.amenities h4').html('$nbsp;');
-    }
+    const names = Object.keys(amenityObj);
+    $('.amenities h4').text(names.sort().join(', '));
   });
-});
+}
