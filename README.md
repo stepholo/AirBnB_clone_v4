@@ -159,7 +159,7 @@ No known bugs at this time.
 - Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
 - David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
 - Stephen Oloo - [Github](https://github.com/stepholo) / [Twitter](https://twitter.com/Stevenob12)
-- babu muraya  -[ github](http://github.com/bmuraya)  / [x.com](https://x.com/babumuraya)
+- babu muraya  -[ github](http://github.com/bmuraya)  / [https://x.com](https://x.com/babumuraya)
 
 Second part of Airbnb: Joann Vuong
 ## License
