@@ -99,3 +99,7 @@
 .user {
   margin-bottom: 1.5%;
 }
+
+.amenities li input {
+    margin-right: 10px;
+}
